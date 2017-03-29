@@ -31,10 +31,12 @@ int main(void)
 
 int f(const int x, const int n)
 {
-	if (x < n) {	//x값이 n보다 작아지면 x값을 배열에 넣습니다.
+	if (x < n)
+	{	//x값이 n보다 작아지면 x값을 배열에 넣습니다.
 		cng[t] = x; return;	
 	}
-	else {
+	else 
+	{
 		cng[t++] = x%n;			//x값이 n보다 크거나 같을경우 x를 n으로 나눈 나머지를 배열에 넣은 후
 		return f(x / n, n);	//다시 함수 f를 호출합니다.
 	}
