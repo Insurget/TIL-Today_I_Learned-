@@ -23,7 +23,7 @@ int main(void)
 		else printf("2~16까지 입력이 가능합니다."); system("cls");
 	}
 
-	Pp(n, n2);	//함수를 호출합니다.
+	Pp(n, n2);
 
 	for (; t >= 0; t--)
 		printf("%d", cng[t]);	//t를 줄여가면서 cng 배열을 출력합니다.
@@ -37,7 +37,7 @@ int f(const int x, const int n)
 	}
 	else 
 	{
-		cng[t++] = x%n;			//x값이 n보다 크거나 같을경우 x를 n으로 나눈 나머지를 배열에 넣은 후
+		cng[t++] = x%n;		//x값이 n보다 크거나 같을경우 x를 n으로 나눈 나머지를 배열에 넣은 후
 		return f(x / n, n);	//다시 함수 f를 호출합니다.
 	}
 }
