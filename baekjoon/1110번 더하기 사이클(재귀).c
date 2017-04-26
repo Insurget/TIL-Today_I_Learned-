@@ -7,11 +7,11 @@ int f(int S_value, int sip, int ill, int n)
 	sip = (sip + ill) % 10;
 	return f(S_value, ill, sip, ++n);
 }
+
 int main(void)
 {
 	int start;
 	
 	scanf("%d", &start);
-	if (start < 10)f(start * 10, start, 0, 0);
 	f(start, start / 10, start % 10, 0);
 }
