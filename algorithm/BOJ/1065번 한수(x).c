@@ -27,7 +27,7 @@ int main(void)
 		j++;
 	}
 }
-
+// 참고용 소스
 /*
 #include<stdio.h>
 void main() {
