@@ -19,7 +19,7 @@ int main(void)
 	int n;	//선택을 위해 입력받을 변수
 	while (1)
 	{
-		pGrade(stu);
+		pGrade(stu);	// Print all Grade
 		std::cout << "선택\n1. 국어 성적 입력\n2. 수학 성적 입력\n3. 영어 성적 입력\n그 외 : 프로그램 종료" << std::endl;
 		std::cin >> n;
 		switch (n) {

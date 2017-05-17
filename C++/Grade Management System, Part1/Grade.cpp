@@ -50,6 +50,7 @@ void pGrade(grade *x)
 	std::cout << std::setw(7) << "평균" << std::setw(7) << k_average << std::setw(11) << e_average << std::setw(11) << m_average << std::setw(11) << m_average + k_average + e_average << std::endl;
 }
 
+//getter
 std::string grade::getName()
 {
 	return name;
@@ -69,7 +70,9 @@ int grade::getMath()
 {
 	return math;
 }
+//getter
 
+//5명의 성적을 한번에 받기 위한 함수 입니다.
 void in_korean(grade *x)
 {
 	for (int i = 0; i < 5; i++)
