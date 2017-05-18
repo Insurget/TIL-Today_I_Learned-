@@ -1,0 +1,1 @@
+Problem Link : [Problem Practice by Chris Ohk](https://github.com/utilForever/ProgrammingPractice/blob/master/Problems/Grade%20Management%20System/Grade%20Management%20System%2C%20Part%201.md "Programming Practice")
