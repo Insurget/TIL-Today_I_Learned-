@@ -7,7 +7,6 @@ int f(int x, int count) {
 	if (x < 1)return;
 	if (x == 1) {
 		if (min > count)min = count;
-		return;
 	}
 	if (x % 3 == 0)f(x / 3, count+1);
 	if (x % 2 == 0)f(x / 2, count+1);
