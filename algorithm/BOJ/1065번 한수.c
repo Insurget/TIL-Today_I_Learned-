@@ -1,4 +1,6 @@
 #include<stdio.h>
+#pragma warning(disable:4996)
+
 int main(void) 
 {
 	int n, k, t, jari[3], hansu=0;
@@ -13,8 +15,12 @@ int main(void)
 				jari[k] = t % 10;
 				t /= 10; k++;
 			}
-			if (jari[0] - jari[1] == jari[1] - jari[2]) hansu++;
+			if (jari[0] - jari[1] == jari[1] - jari[2])
+			{
+				hansu++;
+			}
 		}
+
 	}
 	printf("%d\n", hansu);
 }
