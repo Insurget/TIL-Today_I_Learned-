@@ -16,12 +16,7 @@ int main()
 	for (int i = 0; i < N; i++) { bTemp[i] = B[i]; aTemp[i] = A[i]; }
 	sort(bTemp, bTemp + N);
 	sort(aTemp, aTemp + N);
-	/*for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			if (bTemp[i] == B[j])memoB[i] = j;
-			if (aTemp[i] = A[i])memoA[i] = j;
-		}
-	}*/
+
 	int S = 0;
 	for (int i = 0; i < N; i++) {
 		S += bTemp[i] * aTemp[N - i - 1];

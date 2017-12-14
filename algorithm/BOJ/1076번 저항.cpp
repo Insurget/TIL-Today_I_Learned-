@@ -1,4 +1,11 @@
+#include <string>
+#include <map>
+#include <iostream>
 
+using std::map;
+using std::string;
+using std::cin;
+using std::cout;
 int main()
 {
 	map<string, int> n = {
