@@ -1,14 +1,31 @@
 #include <cstdio>
+#include <cmath>
 #pragma warning(disable:4996)
 
-int d[19];
+int a[20], b;
+int i = 1;
+void f(int x, int* z)
+{
+	while (x != 0)
+	{
+		z[i++] = x % 10;
+		x /= 10;
+	}
+	i--;
+}
+int t;
+int temp;
+
+void fun(int a, int digit)
+{
+	temp = 0;
+}
+
 int main()
 {
-	int a, b;
-	int i = 0;
-	while (a != 0)
-	{
-		d[i++] = a % 10;
-		a /= 10;
-	}
+	scanf("%d %d", &a[0], &b);
+	f(a[0], a);
+	t = a[0];
+	fun(a[1], i);
+	
 }
